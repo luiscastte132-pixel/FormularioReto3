@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="main-container">
+        <form class="registro-form">
+            <h1 id="titulo-formulario">Registro de la persona Usuaria</h1>
+
+            <!-- Campo Nombre -->
+            <div class="campo-grupo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <!-- Campo Apellido -->
+            <div class="campo-grupo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+            </div>
+
+            <!-- Campo Correo Electrónico -->
+            <div class="campo-grupo">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+            </div>
+
+            <!-- Campo Contraseña -->
+            <div class="campo-grupo">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="Min. 8 caracteres" required>
+            </div>
+
+            <!-- Área de texto (Textarea) -->
+            <div class="campo-grupo">
+                <label for="descripcion">Descripción sobre ti:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" placeholder="Cuéntanos un poco sobre ti..."></textarea>
+            </div>
+
+            <!-- Checkboxes de Intereses -->
+            <div class="campo-grupo">
+                <label class="label-grupo">Intereses:</label>
+                <div class="checkbox-container">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="intereses" value="tecnologia"> Tecnología
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="intereses" value="arte"> Arte
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="intereses" value="deporte"> Deporte
+                    </label>
+                </div>
+            </div>
+
+            <!-- Botón de Envío -->
+            <button type="submit" id="btn-enviar">Registrarse</button>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* --- Selectores de Elemento (Estilos Generales) --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+input, textarea, button {
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* --- Selectores de Clase --- */
+.main-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.registro-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.campo-grupo {
+    margin-bottom: 20px;
+}
+
+.campo-grupo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.checkbox-label {
+    font-weight: normal !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para campos de texto y área de texto */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dcdde1;
+    border-radius: 6px;
+    background-color: #fdfdfd;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* --- Selectores de ID --- */
+#titulo-formulario {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+#btn-enviar {
+    width: 100%;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#btn-enviar:hover {
+    background-color: #2980b9;
+}
+
+#btn-enviar:active {
+    transform: scale(0.98);
+}
